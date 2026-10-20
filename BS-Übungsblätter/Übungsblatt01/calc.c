@@ -1,13 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main()
+{
     int n = 0;
     int sum = 0;
-    int remainder = 0;	 
+    int remainder = 0;
     puts("Enter an integer");
-    scanf("%d", &n);
-    while (n != 0) {
+    if (scanf("%d", &n) != 1)
+    {
+        puts("Your input was invalid and therefore the programm is gonna end!");
+        exit(1);
+    }
+    while (n != 0)
+    {
         remainder = n % 10;
         sum = sum + remainder;
         n = n / 10;
