@@ -33,7 +33,8 @@ int main(void)
     }
     // after confirming name, populate the placeholder yourName with the correct info
     // first create the char with the correct length
-    printf("stenlen of buffer is: %ld\n", strlen(buffer));
+    // commented out the printf under this comment
+    // printf("strnlen of buffer is: %ld\n", strlen(buffer));
     char yourName[strlen(buffer) + 1];
     // then use strcpy from the string.h header to copy the contents from the buffer
     strcpy(yourName, buffer);
