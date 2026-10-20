@@ -26,7 +26,7 @@ int main(void)
     printf("Testing pointers and their effects on local copies:\n");
 
     int n = 0;
-    printf ("int n was declared and given the value: %d\n", n);
+    printf("int n was declared and given the value: %d\n", n);
     inc1(n);
     printf("After running inc1(n), the value of n gives back: %d\n", n);
 
